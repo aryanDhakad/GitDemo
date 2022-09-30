@@ -1,0 +1,35 @@
+.row{
+  padding: 10px;
+  border: 2px solid black;
+  width: 100vw;
+  
+}
+.col{
+  display: inline-block;
+  min-height: 30px;
+  border: 1px solid black;
+  background-color: yellow;
+  margin: 0 5px;
+}
+
+@media only screen and (min-width : 1200px){
+  .col{
+    width: 22%;
+  }
+}
+
+@media only screen and (min-width : 800px) and ( max-width : 1199px){
+  .col{
+    width: 45%;
+    font-size: 2rem;
+    background-color: red;
+  }
+}
+
+@media only screen and (max-width : 799px){
+  .col{
+    width: 100%;
+    font-size: 3rem;
+    background-color: yellow;
+  }
+}
